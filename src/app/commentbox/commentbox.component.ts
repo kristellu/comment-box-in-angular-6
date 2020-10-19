@@ -22,7 +22,7 @@ export class CommentboxComponent implements OnInit {
 
   createForm() {
     this.commentForm = this.formBuilder.group({
-      comment: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(100)]]
+      comment: ['', [Validators.required]]
     });
   }
 
